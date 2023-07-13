@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amit Jena / Personal website - Designer, Developer, Maker</title>
+    <meta charset="utf-8" />
+
+    <link rel="shortcut icon" href="/static/images/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/static/style.css"
+    />
+  </head>
+  <body>
+    <section class="container wrap">
+      <div class="header">
+        <div class="logo">
+          <a href="http://www.amitjena.com/"
+            ><img
+              alt="Amit Jena's personal website"
+              src="/static/images/logo.png"
+              height="40px"
+          /></a>
+        </div>
+        <nav class="nav">
+          <a class="" href="/" title="">Home</a>
+
+          <!-- <a class="" href="/work" title="">Projects</a> -->
+          <a class="" href="#" title="">Projects</a>
+
+          <!-- <a class="" href="/research" title="">Research</a> -->
+          <a class="" href="#" title="">Research</a>
+
+          <!-- <a class="" href="/blog" title="">Blog</a> -->
+          <a class="" href="#" title="">Blog</a>
+        </nav>
+      </div>
+
+      <div class="content">
+        <section class="home">
+          <h2 class="slogan">Designer / Developer / Maker</h2>
+
+          <div class="photo">
+            <img src="/static/images/amit-2023-desature.jpg" alt="Photo of Amit Jena" />
+          </div>
+          <div class="bio half">
+            <p>
+              I am an accidental designer and hobbyist software developer. I am
+              a design researcher by training and a data visualisation
+              practitioner by passion.
+            </p>
+            <p>
+              For a majority period, I am in the academia&mdash;at IIT
+              Bombay&#x2010;Monash Research Academy, Mumbai&mdash;doing
+              research, from where I am completing Ph.D. in Data
+              Visualisation,&mdash;at IIIT-Bhubaneswar, Odisha, India&mdash;I
+              obtained a M.Tech in Computer Science &amp; Engineering (2017),
+              and &mdash;at Central University of Jharkhand, Ranchi,
+              India&mdash;I obtained an Integrated M.Sc. in Applied Mathematics
+              (2014).
+            </p>
+            <p>
+              I volunteer at <a href="#">Beyond Ph.D.</a>, an initiative for
+              aspiring and current Ph.D. students, <a href="#">Lizzie Labs</a>,
+              an initiative to strengthen the visualisation research &amp;
+              design scene across India, and
+              <a href="#">Lizzie Care Foundation</a>, a think tank for
+              democratising learning and possibly healthcare.
+            </p>
+            <p>
+              I am an optimist, and hopeful of the future generation. I believe
+              with the right motivation, we can make the world a better place.
+            </p>
+          </div>
+
+          <div class="slideshow">
+            <figure class="visible">
+              <img
+                class="slide"
+                src="/static/images/photos/konarkRoad.jpg"
+                alt="Photo of Puri-Konark road, Odisha, India"
+              />
+              <figcaption>Puri-Konark road, Odisha, India</figcaption>
+            </figure>
+            <figure>
+              <img
+                class="slide"
+                src="/static/images/photos/crow.jpg"
+                alt="Photo of a crow in Jaipur, India"
+              />
+              <figcaption>Jaipur, India</figcaption>
+            </figure>
+          </div>
+
+          <div class="half">
+            <p>
+              I discovered the idea of code sometime in 2008 after getting a
+              personal computer. Starting with C, I have been going down the
+              rabbithole ever since. These days, I mostly write programs in
+              Javascript. Some of my personal projects can be
+              <a href="#">found here</a>.
+            </p>
+            <p>
+              This website first went online in 2020 and has since undergone
+              numerous iterations. It has lived long on github site before
+              getting a domain name.
+            </p>
+            <p>
+              The period brings back nostalgia&mdash;the discovery of code, the
+              excitement of connecting to the world over dialup Internet, the
+              gratification of relentless experimentation by trial and error.
+            </p>
+            <p>
+              That said, I am figuring out ways to combine my passion for design
+              & code and tell stories to the world. I am a Nobody with a keen
+              desire to keep learning throughout my life.
+            </p>
+            <p>
+              <em>Last updated on 13th July 2023.</em> I can be reached at
+              <a href="mailto: namaste@amitjena.com"
+                ><span">namaste@amitjena.com</span></a
+              >.
+            </p>
+          </div>
+        </section>
+
+        <section class="recent-posts">
+          <h2>Blog posts</h2>
+          <ul>
+            <li>
+              <span class="date"> 15 July 2023 </span>
+              <a href="#"
+                >I am optimist of the future generation</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="social-presence">
+          <h2>Virtual Presence</h2>
+          <ul>
+            &#8226;<a href="https://www.linkedin.com/in/namastevis/">LinkedIn</a>
+            &#8226;<a href="https://twitter.com/namastevis">Twitter</a>
+            &#8226;<a href="https://github.com/namastevis">GitHub</a>
+            &#8226;<a href="https://scholar.google.com/citations?user=t98YXOQAAAAJ&hl=en&authuser=4">Google Scholar</a>
+          </ul>
+        </section>
+
+        <script
+          data-cfasync="false"
+          src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+        ></script>
+        <script>
+          (function () {
+            var slides = document.querySelectorAll(".slideshow figure");
+            var last = 0;
+            window.setInterval(function () {
+              slides[last].classList.remove("visible");
+              last = (last + 1) % slides.length;
+              slides[last].classList.add("visible");
+            }, 10000);
+          })();
+        </script>
+      </div>
+    </section>
+    <footer class="footer">Amit Jena &copy; 2022-2023.</footer>
+  </body>
+</html>
