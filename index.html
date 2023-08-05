@@ -98,8 +98,7 @@
               I discovered the idea of code sometime in 2008 after getting a
               personal computer. Starting with C, I have been going down the
               rabbithole ever since. These days, I mostly write programs in
-              Javascript. Some of my personal projects can be
-              <a href="#">found here</a>.
+              Javascript.
             </p>
             <p>
               This website first went online in 2020 and has since undergone
@@ -117,7 +116,7 @@
               desire to keep learning throughout my life.
             </p>
             <p>
-              <em>Last updated on 03rd August 2023.</em> I can be reached at
+              <em>Last updated on <span id='today-date'></span>.</em> I can be reached at
               <a href="mailto: namaste@amitjena.com"
                 ><span">namaste@amitjena.com</span></a
               >.
@@ -163,6 +162,10 @@
               slides[last].classList.add("visible");
             }, 10000);
           })();
+        </script>
+        <script>
+          var dt = new Date();
+          document.getElementById('today-date').innerHTML=dt;
         </script>
       </div>
     </section>
