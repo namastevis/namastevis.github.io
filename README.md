@@ -1,2 +1,1 @@
-# Personal Website
-Visit http://www.amitjena.com/
+You are at Amit's homepage. I am re-designing it. Stay tuned!
