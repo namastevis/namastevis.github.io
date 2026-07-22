@@ -4,7 +4,7 @@ Personal site, plain HTML/CSS/JS, no build step. Light, subtle theme. Portfolio 
 
 Layout: every page uses a sticky header (name + tagline + nav) and sticky footer (socials), with only the middle content area scrolling. Works the same on mobile.
 
-Work cards on the homepage link straight out to each project's live site in a new tab (Railway Data Story, District Nutrition Profile 2.0, Land Measurement Units). There's no separate internal case-study page to maintain.
+Each work card on the homepage has two link zones: the thumbnail image opens the project's GitHub repo, and the title/description area opens the live site. Both open in a new tab. There's no separate internal case-study page to maintain.
 
 ## Structure
 
@@ -42,7 +42,7 @@ CNAME                custom domain for GitHub Pages
 
 - **Intro**: edit the `.intro` section in `index.html`.
 - **About page**: edit the sections in `about.html`.
-- **Add a project**: copy a `.work-card` block inside `.work-grid` in `index.html`, then update the `href` to the project's live URL (it opens in a new tab), the thumbnail image, the title, description, and tag. The grid reflows automatically as cards are added, no layout changes needed.
+- **Add a project**: copy a `.work-card` block inside `.work-grid` in `index.html`. It has two links: `.work-thumb` (the image, `href` to the GitHub repo) and `.work-body` (the title/description, `href` to the live site). Update both URLs, the thumbnail image, title, description, and tag. The grid reflows automatically as cards are added, no layout changes needed.
 - **Add a blog post**: copy `blog/posts/hello-world.html`, rename it, update the title/date/content, then add a link to it at the top of `blog/index.html`.
 - **Socials**: the footer is repeated on every page. Update all handles in the `.footer-inner` block across `index.html`, `about.html`, and `blog/**/*.html` if they ever change.
 
