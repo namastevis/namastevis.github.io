@@ -1,19 +1,20 @@
 # namastevis.in
 
-Personal site — plain HTML/CSS/JS, no build step. Portfolio landing, about, work case studies, and blog.
+Personal site — plain HTML/CSS/JS, no build step. Light, subtle theme. Portfolio landing, about, and blog.
 
 Layout: every page uses a sticky header (name + tagline + nav) and sticky footer (socials), with only the middle content area scrolling — works the same on mobile.
+
+Work cards on the homepage link straight out to each project's live site in a new tab (Railway Connectivity, District Nutrition Profile 2.0, Land Measurement Units) — there's no separate internal case-study page to maintain.
 
 ## Structure
 
 ```
-index.html                     portfolio landing (intro + Work grid)
-about.html                     about me
-projects/railway-station.html  work case study — copy this file for each new project
-blog/index.html                blog post list
-blog/posts/*.html              individual posts
-css/style.css                  shared styles
-CNAME                          custom domain for GitHub Pages
+index.html          portfolio landing (intro + Work grid, links out to live projects)
+about.html           about me
+blog/index.html      blog post list
+blog/posts/*.html    individual posts
+css/style.css        shared styles
+CNAME                custom domain for GitHub Pages
 ```
 
 ## Deploy on GitHub Pages
@@ -40,10 +41,10 @@ CNAME                          custom domain for GitHub Pages
 ## Editing content
 
 - **Intro**: edit the `.intro` section in `index.html`.
-- **About page**: fill in the placeholder sections in `about.html`.
-- **Add a project**: copy `projects/railway-station.html`, rename it, fill in the content, then add a matching `.work-card` link to it inside the `.work-grid` in `index.html`. The grid reflows automatically as cards are added — no layout changes needed.
+- **About page**: edit the sections in `about.html`.
+- **Add a project**: copy a `.work-card` block inside `.work-grid` in `index.html`, then update the `href` to the project's live URL (it opens in a new tab), the title, description, and tag. The grid reflows automatically as cards are added — no layout changes needed.
 - **Add a blog post**: copy `blog/posts/hello-world.html`, rename it, update the title/date/content, then add a link to it at the top of `blog/index.html`.
-- **Socials**: the footer is repeated on every page — update all handles in the `.footer-inner` block across `index.html`, `about.html`, `projects/*.html`, and `blog/**/*.html` if they ever change.
+- **Socials**: the footer is repeated on every page — update all handles in the `.footer-inner` block across `index.html`, `about.html`, and `blog/**/*.html` if they ever change.
 
 ## Local preview
 
