@@ -3,40 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog · namastevis</title>
+<title>Blog · Amit Jena</title>
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div class="wrap">
+<div class="page">
 
   <header class="site-header">
-    <div class="brand">namastevis</div>
-    <nav class="site-nav">
-      <a href="../index.html">Home</a>
-      <a href="../projects.html">Projects</a>
-      <a href="index.html" class="active">Blog</a>
-    </nav>
+    <div class="header-inner">
+      <div class="identity">
+        <a href="../index.html#work" class="name">Amit Jena</a>
+        <span class="tagline">Accidental Designer</span>
+      </div>
+      <nav class="site-nav">
+        <a href="../index.html#work">Work</a>
+        <a href="../about.html">About</a>
+        <a href="index.html" class="active">Blog</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Blog</h1>
-    <p class="tagline">Notes and write-ups. New posts get added here.</p>
-  </section>
+  <main class="scroll-area">
+    <div class="wrap">
 
-  <section class="post-list">
-    <a class="post-link" href="posts/hello-world.html">
-      Hello, world
-      <span class="post-date">July 2026</span>
-    </a>
-  </section>
+      <section class="intro">
+        <h1>Blog</h1>
+        <p>Notes and write-ups. New posts get added here.</p>
+      </section>
+
+      <section class="post-list">
+        <a class="post-link" href="posts/hello-world.html">
+          Hello, world
+          <span class="post-date">July 2026</span>
+        </a>
+      </section>
+
+    </div>
+  </main>
 
   <footer class="site-footer">
-    © <span id="year"></span> namastevis · namastevis.in
+    <div class="footer-inner">
+      <a href="https://github.com/namastevis" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/namastevis" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://instagram.com/namastevis" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/namastevis" target="_blank" rel="noopener">Twitter/X</a>
+    </div>
   </footer>
-</div>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+</div>
 </body>
 </html>

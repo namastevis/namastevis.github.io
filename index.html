@@ -3,68 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>namastevis</title>
-<meta name="description" content="Personal site of namastevis — projects, writing, and links.">
+<title>Amit Jena — Accidental Designer</title>
+<meta name="description" content="Amit Jena's portfolio — an Accidental Designer with a background in mathematics and computer science.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="wrap">
+<div class="page">
 
   <header class="site-header">
-    <div class="brand">namastevis</div>
-    <nav class="site-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog/index.html">Blog</a>
-    </nav>
+    <div class="header-inner">
+      <div class="identity">
+        <a href="index.html#work" class="name">Amit Jena</a>
+        <span class="tagline">Accidental Designer</span>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html#work" class="active">Work</a>
+        <a href="about.html">About</a>
+        <a href="blog/index.html">Blog</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Hi, I'm namastevis 👋</h1>
-    <p class="tagline">One-line bio goes here — what you build, what you write about, what you're into.</p>
-  </section>
+  <main class="scroll-area">
+    <div class="wrap">
 
-  <div class="socials">
-    <a href="https://github.com/namastevis" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://linkedin.com/in/namastevis" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://instagram.com/namastevis" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://twitter.com/namastevis" target="_blank" rel="noopener">Twitter/X</a>
-  </div>
+      <section class="intro">
+        <h1>Amit Jena — the Accidental Designer.</h1>
+        <p>
+          Trained in mathematics and computer science, I found my way into design
+          almost by accident — and stayed because it let me combine the logic of
+          one world with the intuition of the other.
+        </p>
+      </section>
 
-  <section>
-    <h2>About</h2>
-    <p>
-      A short paragraph about who you are, what you do professionally, and what
-      this site is for. Replace this with your real bio.
-    </p>
-  </section>
+      <section class="work-section" id="work">
+        <h2>Work</h2>
 
-  <section>
-    <h2>Latest projects</h2>
-    <div class="card">
-      <h3>Project name</h3>
-      <p>One-line description of what it does and why it's interesting.</p>
-      <p class="meta"><a href="https://github.com/namastevis" target="_blank" rel="noopener">View on GitHub →</a></p>
+        <div class="work-grid">
+          <a class="work-card" href="projects/railway-station.html">
+            <div class="work-thumb" aria-hidden="true"></div>
+            <div class="work-body">
+              <h3>Railway Station</h3>
+              <p>A short one-line summary of the Railway Station project goes here.</p>
+              <div class="work-tags">Case study</div>
+            </div>
+          </a>
+        </div>
+
+        <p class="work-note">More projects get added here as they're finished — this grid grows without needing a redesign.</p>
+      </section>
+
     </div>
-    <p><a href="projects.html">See all projects →</a></p>
-  </section>
-
-  <section>
-    <h2>Latest writing</h2>
-    <div class="card">
-      <h3><a href="blog/posts/hello-world.html">Hello, world</a></h3>
-      <p class="meta">A short intro post — replace with your own.</p>
-    </div>
-    <p><a href="blog/index.html">See all posts →</a></p>
-  </section>
+  </main>
 
   <footer class="site-footer">
-    © <span id="year"></span> namastevis · namastevis.in
+    <div class="footer-inner">
+      <a href="https://github.com/namastevis" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/namastevis" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://instagram.com/namastevis" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/namastevis" target="_blank" rel="noopener">Twitter/X</a>
+    </div>
   </footer>
-</div>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+</div>
 </body>
 </html>
