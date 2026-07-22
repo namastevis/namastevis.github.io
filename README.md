@@ -1,10 +1,10 @@
 # namastevis.in
 
-Personal site — plain HTML/CSS/JS, no build step. Light, subtle theme. Portfolio landing, about, and blog.
+Personal site, plain HTML/CSS/JS, no build step. Light, subtle theme. Portfolio landing, about, and blog.
 
-Layout: every page uses a sticky header (name + tagline + nav) and sticky footer (socials), with only the middle content area scrolling — works the same on mobile.
+Layout: every page uses a sticky header (name + tagline + nav) and sticky footer (socials), with only the middle content area scrolling. Works the same on mobile.
 
-Work cards on the homepage link straight out to each project's live site in a new tab (Railway Connectivity, District Nutrition Profile 2.0, Land Measurement Units) — there's no separate internal case-study page to maintain.
+Work cards on the homepage link straight out to each project's live site in a new tab (Railway Data Story, District Nutrition Profile 2.0, Land Measurement Units). There's no separate internal case-study page to maintain.
 
 ## Structure
 
@@ -26,7 +26,7 @@ CNAME                custom domain for GitHub Pages
 
 ## Point namastevis.in at it
 
-1. Keep the `CNAME` file in the repo root (already set to `namastevis.in`) — GitHub Pages uses it to know your custom domain.
+1. Keep the `CNAME` file in the repo root (already set to `namastevis.in`). GitHub Pages uses it to know your custom domain.
 2. At your domain registrar's DNS settings for `namastevis.in`, add:
    - Four **A records** for the apex domain (`@`) pointing to GitHub Pages' IPs:
      ```
@@ -42,13 +42,13 @@ CNAME                custom domain for GitHub Pages
 
 - **Intro**: edit the `.intro` section in `index.html`.
 - **About page**: edit the sections in `about.html`.
-- **Add a project**: copy a `.work-card` block inside `.work-grid` in `index.html`, then update the `href` to the project's live URL (it opens in a new tab), the title, description, and tag. The grid reflows automatically as cards are added — no layout changes needed.
+- **Add a project**: copy a `.work-card` block inside `.work-grid` in `index.html`, then update the `href` to the project's live URL (it opens in a new tab), the thumbnail image, the title, description, and tag. The grid reflows automatically as cards are added, no layout changes needed.
 - **Add a blog post**: copy `blog/posts/hello-world.html`, rename it, update the title/date/content, then add a link to it at the top of `blog/index.html`.
-- **Socials**: the footer is repeated on every page — update all handles in the `.footer-inner` block across `index.html`, `about.html`, and `blog/**/*.html` if they ever change.
+- **Socials**: the footer is repeated on every page. Update all handles in the `.footer-inner` block across `index.html`, `about.html`, and `blog/**/*.html` if they ever change.
 
 ## Local preview
 
-No build tools needed — just open `index.html` in a browser, or serve the folder:
+No build tools needed, just open `index.html` in a browser, or serve the folder:
 
 ```
 python3 -m http.server 8000
