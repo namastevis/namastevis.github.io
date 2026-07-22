@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello, world · namastevis</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site-header">
+    <div class="brand">namastevis</div>
+    <nav class="site-nav">
+      <a href="../../index.html">Home</a>
+      <a href="../../projects.html">Projects</a>
+      <a href="../index.html" class="active">Blog</a>
+    </nav>
+  </header>
+
+  <article class="post">
+    <h1>Hello, world</h1>
+    <p class="post-meta">July 2026</p>
+
+    <p>
+      This is the first post on the site. Replace this template with your
+      own writing — updates on projects, things you're learning, or anything
+      else worth sharing.
+    </p>
+
+    <p>
+      To add a new post: copy this file, rename it, update the title and
+      date, write the content, then add a link to it in
+      <code>blog/index.html</code>.
+    </p>
+  </article>
+
+  <footer class="site-footer">
+    © <span id="year"></span> namastevis · namastevis.in
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

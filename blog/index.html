@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog · namastevis</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site-header">
+    <div class="brand">namastevis</div>
+    <nav class="site-nav">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="index.html" class="active">Blog</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Blog</h1>
+    <p class="tagline">Notes and write-ups. New posts get added here.</p>
+  </section>
+
+  <section class="post-list">
+    <a class="post-link" href="posts/hello-world.html">
+      Hello, world
+      <span class="post-date">July 2026</span>
+    </a>
+  </section>
+
+  <footer class="site-footer">
+    © <span id="year"></span> namastevis · namastevis.in
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

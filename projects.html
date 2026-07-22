@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects · namastevis</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site-header">
+    <div class="brand">namastevis</div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="blog/index.html">Blog</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Projects</h1>
+    <p class="tagline">Things I've built. Pulled from <a href="https://github.com/namastevis" target="_blank" rel="noopener">github.com/namastevis</a>.</p>
+  </section>
+
+  <section>
+    <div class="card">
+      <h3>Project one</h3>
+      <p>What it does, the problem it solves, and the stack used.</p>
+      <p class="meta"><a href="https://github.com/namastevis" target="_blank" rel="noopener">Repo →</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Project two</h3>
+      <p>What it does, the problem it solves, and the stack used.</p>
+      <p class="meta"><a href="https://github.com/namastevis" target="_blank" rel="noopener">Repo →</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Project three</h3>
+      <p>What it does, the problem it solves, and the stack used.</p>
+      <p class="meta"><a href="https://github.com/namastevis" target="_blank" rel="noopener">Repo →</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    © <span id="year"></span> namastevis · namastevis.in
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>namastevis</title>
+<meta name="description" content="Personal site of namastevis — projects, writing, and links.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site-header">
+    <div class="brand">namastevis</div>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog/index.html">Blog</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hi, I'm namastevis 👋</h1>
+    <p class="tagline">One-line bio goes here — what you build, what you write about, what you're into.</p>
+  </section>
+
+  <div class="socials">
+    <a href="https://github.com/namastevis" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/namastevis" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://instagram.com/namastevis" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://twitter.com/namastevis" target="_blank" rel="noopener">Twitter/X</a>
+  </div>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      A short paragraph about who you are, what you do professionally, and what
+      this site is for. Replace this with your real bio.
+    </p>
+  </section>
+
+  <section>
+    <h2>Latest projects</h2>
+    <div class="card">
+      <h3>Project name</h3>
+      <p>One-line description of what it does and why it's interesting.</p>
+      <p class="meta"><a href="https://github.com/namastevis" target="_blank" rel="noopener">View on GitHub →</a></p>
+    </div>
+    <p><a href="projects.html">See all projects →</a></p>
+  </section>
+
+  <section>
+    <h2>Latest writing</h2>
+    <div class="card">
+      <h3><a href="blog/posts/hello-world.html">Hello, world</a></h3>
+      <p class="meta">A short intro post — replace with your own.</p>
+    </div>
+    <p><a href="blog/index.html">See all posts →</a></p>
+  </section>
+
+  <footer class="site-footer">
+    © <span id="year"></span> namastevis · namastevis.in
+  </footer>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
