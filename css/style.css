@@ -181,8 +181,8 @@ section.work-section h2 {
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
 }
 
 .work-card {
@@ -204,46 +204,41 @@ section.work-section h2 {
 
 .work-thumb {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 140px;
-  padding: 1.5rem;
+  display: block;
+  height: 92px;
   background: linear-gradient(135deg, #eef1fb, #f4f2ee);
   border-bottom: 1px solid var(--border);
   overflow: hidden;
-  transition: background 0.15s ease;
 }
 
-.work-thumb:hover {
-  background: linear-gradient(135deg, #e6eafa, #efece5);
+.work-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
 }
 
-.thumb-repo {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: var(--text-dim);
-  text-align: center;
-  word-break: break-word;
+.work-thumb:hover img {
+  transform: scale(1.03);
 }
 
 .thumb-label {
   position: absolute;
-  top: 0.55rem;
-  right: 0.55rem;
+  top: 0.4rem;
+  right: 0.4rem;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 0.2rem 0.65rem;
-  font-size: 0.72rem;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.65rem;
   font-weight: 500;
   color: var(--text);
 }
 
 .work-card .work-body {
   display: block;
-  padding: 1.1rem 1.25rem 1.3rem;
+  padding: 0.85rem 0.9rem 1rem;
   color: var(--text);
 }
 
@@ -253,28 +248,31 @@ section.work-section h2 {
 }
 
 .work-card h3 {
-  margin: 0 0 0.4rem;
-  font-size: 1.05rem;
+  margin: 0 0 0.3rem;
+  font-size: 0.92rem;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
   color: var(--text);
+  line-height: 1.3;
 }
 
 .work-card h3 .ext-icon {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--text-dim);
+  flex-shrink: 0;
 }
 
 .work-card p {
   margin: 0;
   color: var(--text-dim);
-  font-size: 0.92rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 .work-card .work-tags {
-  margin-top: 0.75rem;
-  font-size: 0.78rem;
+  margin-top: 0.6rem;
+  font-size: 0.7rem;
   color: var(--accent);
   letter-spacing: 0.02em;
 }
@@ -339,6 +337,14 @@ article.post .post-meta {
   color: var(--text-dim);
   font-size: 0.9rem;
   margin-bottom: 2rem;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 720px) and (min-width: 601px) {
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ---------- Mobile ---------- */
